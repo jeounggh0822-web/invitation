@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>한 해의 저울을 내려놓고 | 대전대흥침례교회 서구교구</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS 애니메이션 라이브러리 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 폰트: 우아한 명조체(제목용)와 가독성 높은 고딕체(본문용) -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" rel="stylesheet" type="text/css" />
+    
+    <style>
+        :root {
+            --primary-color: #5C2018; /* 깊은 버건디/포도주색 (포도원 비유 상징) */
+            --bg-color: #FDFBF7; /* 아주 부드러운 웜 아이보리 */
+            --text-main: #333333;
+            --text-sub: #666666;
+        }
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #e5e7eb;
+            color: var(--text-main);
+            word-break: keep-all;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+        .font-serif {
+            font-family: 'Noto Serif KR', serif;
+        }
+        .mobile-wrap {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: var(--bg-color);
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            position: relative;
+            overflow-x: hidden;
+        }
+        /* 포인트 장식 선 */
+        .deco-line {
+            width: 1px;
+            height: 40px;
+            background-color: var(--primary-color);
+            margin: 0 auto;
+            opacity: 0.5;
+        }
+        /* 달력 스타일 */
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 15px 5px;
+            text-align: center;
+            font-size: 1.2rem;
+            margin-top: 20px;
+        }
+        .cal-head {
+            font-size: 1rem;
+            color: #999;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+        .d-day {
+            background-color: var(--primary-color);
+            color: white !important;
+            border-radius: 50%;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto;
+            font-weight: 700;
+            box-shadow: 0 4px 10px rgba(92, 32, 24, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mobile-wrap pb-24">
+        
+        <!-- 1. 커버 (포스터 이미지) -->
+        <div class="relative w-full overflow-hidden bg-white shadow-sm" data-aos="fade-in" data-aos-duration="1500">
+            <!-- 💡 실제 서버에 올리실 때는 이 이미지가 정상적으로 나타납니다 -->
+            <img src="서구교구 연합예배 초대 포스터_2.png" alt="연합예배 포스터" class="w-full h-auto block" onerror="this.src='https://placehold.co/800x1130/FAF8F5/5C2018?text=포스터+이미지\n(실제+서버+적용시+표시됨)'">
+        </div>
+
+        <!-- 2. 초대 인사말 -->
+        <div class="px-8 py-20 text-center">
+            <div data-aos="fade-up" data-aos-duration="1000">
+                <p class="text-sm font-bold tracking-widest text-[#5C2018] mb-4">INVITATION</p>
+                <h2 class="font-serif text-[1.8rem] font-bold text-gray-900 leading-snug mb-10">
+                    “그 판정은 마지막 말이 아니다.<br>마지막 말은 주인이 하신다.”
+                </h2>
+                <div class="deco-line mb-10"></div>
+            </div>
+            
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" class="space-y-8 text-[1.2rem] text-gray-700 leading-[1.8]">
+                <p>2026년 한 해를 돌아보면<br>어떤 생각이 먼저 떠오르시나요?</p>
+                <p>잘한 일도 있고,<br>아쉬운 일도 있습니다.<br>감사한 순간도 있었고,<br>마음처럼 되지 않았던 시간도<br>있었을 것입니다.</p>
+                <p class="font-semibold text-gray-900 text-[1.3rem]">
+                    한 해의 저울을 내려놓고,<br>참된 주인이신 하나님을 만나는 자리에<br>서구교구 성도님들을 초대합니다.
+                </p>
+            </div>
+        </div>
+
+        <!-- 3. 예배 상세 안내 -->
+        <div class="bg-white mx-5 rounded-2xl p-8 shadow-sm border border-gray-100 mb-16" data-aos="fade-up" data-aos-duration="1000">
+            <h3 class="font-serif text-2xl font-bold text-center text-[#5C2018] mb-8 border-b border-gray-100 pb-4">예배 안내</h3>
+            
+            <div class="space-y-6">
+                <div class="flex items-center">
+                    <div class="w-20 text-gray-400 font-bold text-[1.1rem]">일시</div>
+                    <div class="text-gray-900 text-[1.2rem] font-bold">11월 22일(주일) 오후 1시</div>
+                </div>
+                <div class="flex items-center">
+                    <div class="w-20 text-gray-400 font-bold text-[1.1rem]">장소</div>
+                    <div class="text-gray-900 text-[1.2rem] font-bold">선교센터 3층</div>
+                </div>
+                <div class="flex items-start">
+                    <div class="w-20 text-gray-400 font-bold text-[1.1rem] mt-1">말씀</div>
+                    <div class="text-gray-900 text-[1.2rem] leading-snug">
+                        <b>마가복음 12장 1-12절</b><br>
+                        <span class="text-[1rem] text-gray-500">포도원 농부의 비유</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. 달력 -->
+        <div class="px-8 pb-20" data-aos="fade-up" data-aos-duration="1000">
+            <div class="text-center mb-8">
+                <h3 class="font-serif text-[1.5rem] font-bold text-gray-900 tracking-widest">2026. 11</h3>
+            </div>
+            
+            <div class="calendar bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <div class="cal-head text-red-400">일</div>
+                <div class="cal-head">월</div>
+                <div class="cal-head">화</div>
+                <div class="cal-head">수</div>
+                <div class="cal-head">목</div>
+                <div class="cal-head">금</div>
+                <div class="cal-head">토</div>
+                
+                <div class="text-red-500 py-2">1</div>
+                <div class="text-gray-500 py-2">2</div>
+                <div class="text-gray-500 py-2">3</div>
+                <div class="text-gray-500 py-2">4</div>
+                <div class="text-gray-500 py-2">5</div>
+                <div class="text-gray-500 py-2">6</div>
+                <div class="text-gray-500 py-2">7</div>
+                
+                <div class="text-red-500 py-2">8</div>
+                <div class="text-gray-500 py-2">9</div>
+                <div class="text-gray-500 py-2">10</div>
+                <div class="text-gray-500 py-2">11</div>
+                <div class="text-gray-500 py-2">12</div>
+                <div class="text-gray-500 py-2">13</div>
+                <div class="text-gray-500 py-2">14</div>
+                
+                <div class="text-red-500 py-2">15</div>
+                <div class="text-gray-500 py-2">16</div>
+                <div class="text-gray-500 py-2">17</div>
+                <div class="text-gray-500 py-2">18</div>
+                <div class="text-gray-500 py-2">19</div>
+                <div class="text-gray-500 py-2">20</div>
+                <div class="text-gray-500 py-2">21</div>
+                
+                <div class="py-1"><div class="d-day">22</div></div>
+                <div class="text-gray-500 py-2">23</div>
+                <div class="text-gray-500 py-2">24</div>
+                <div class="text-gray-500 py-2">25</div>
+                <div class="text-gray-500 py-2">26</div>
+                <div class="text-gray-500 py-2">27</div>
+                <div class="text-gray-500 py-2">28</div>
+                
+                <div class="text-red-500 py-2">29</div>
+                <div class="text-gray-500 py-2">30</div>
+                <div></div><div></div><div></div><div></div><div></div>
+            </div>
+            
+            <div class="text-center mt-8">
+                <p class="text-gray-600 text-[1.1rem]">
+                    11월 22일 주일 오후 1시,<br><b class="text-gray-900 text-[1.2rem]">기쁨으로 여러분을 기다립니다.</b>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 하단 공유버튼 모바일 청첩장 고정 바 -->
+    <div class="fixed bottom-0 left-1/2 transform -translate-x-1/2 w-full max-w-[480px] bg-white border-t border-gray-200 p-4 z-50 flex gap-3 shadow-[0_-4px_20px_rgba(0,0,0,0.05)]">
+        <button onclick="copyLink()" class="flex-1 bg-[#5C2018] text-white font-bold py-4 rounded-xl text-[1.1rem] active:scale-95 transition-transform flex justify-center items-center gap-2">
+            🔗 초대장 주소 복사하기
+        </button>
+    </div>
+
+    <!-- 알림 메시지 -->
+    <div id="toast" class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black/80 text-white px-6 py-4 rounded-xl z-[100] transition-opacity duration-300 opacity-0 hidden text-center w-[80%] max-w-[350px] text-lg font-medium">
+    </div>
+
+    <script>
+        AOS.init({ once: false, offset: 50 });
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            toast.innerHTML = msg;
+            toast.classList.remove('hidden');
+            setTimeout(() => toast.classList.remove('opacity-0'), 10);
+            setTimeout(() => {
+                toast.classList.add('opacity-0');
+                setTimeout(() => toast.classList.add('hidden'), 300);
+            }, 3000);
+        }
+
+        function copyLink() {
+            // 인터넷 주소가 없을 경우 안내 (로컬 환경일 때)
+            if(window.location.href.indexOf('file://') !== -1 || window.location.href.indexOf('blob:') !== -1) {
+                showToast("현재는 임시 미리보기 화면입니다.<br><br>이 파일을 교회 홈페이지 서버에 올리신 후 사용하시면 정상적으로 주소가 복사됩니다.");
+                return;
+            }
+
+            const dummy = document.createElement('input');
+            document.body.appendChild(dummy);
+            dummy.value = window.location.href;
+            dummy.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummy);
+            
+            showToast("✅ 초대장 주소가 복사되었습니다!<br><br>카카오톡 채팅방에 붙여넣기 해주세요.");
+        }
+    </script>
+</body>
+</html>
